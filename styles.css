@@ -1,0 +1,450 @@
+/********f************
+    
+    Project 1 Stylesheet
+    Name: JiaHui Wu
+    Date: 2023-10-15
+    Description: CSS file of the mock of the Project1 website
+
+*********************/
+
+html,
+body,
+section,
+p,
+header,
+nav,
+footer,
+div,
+article,
+aside,
+ol,
+ul,
+li,
+h1,
+h6 {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e6e6e6;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div#container {
+  width: 810px;
+  background-color: #fff;
+  border-radius: 8px;
+  margin: 10px auto;
+  padding: 10px;
+  box-shadow: 1px 1px 2px #a2a2a2, -1px 2px #a2a2a2,
+    inset 0 -10px 10px -10px grey;
+}
+
+.header1 header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header1 #logo {
+  order: 1;
+  width: 100px;
+  height: 50px;
+}
+
+.header1 .top-nav {
+  order: 2;
+  padding-top: 25px;
+  width: 25em;
+}
+
+.header1 .top-nav ul li {
+  display: inline-block;
+  font-size: 11px;
+}
+
+.header1 .top-nav ul li a {
+  text-decoration: none;
+  color: #4790c8;
+  transition: all 0.5s ease;
+}
+
+.header1 .top-nav ul a:hover {
+  color: #f00;
+}
+
+.header1 .top-nav ul a:focus {
+  color: #f00;
+}
+
+.header1 .top-nav ul li + li::before {
+  content: "|";
+  font-size: 14px;
+  padding-right: 5px;
+  color: #bfd9e5;
+}
+
+.header1 #search {
+  order: 3;
+  gap: 4px;
+  padding-top: 15px;
+}
+
+.header1 #search #search-box {
+  width: 84px;
+  height: 20px;
+  border: 1px solid #b5b5b5;
+}
+
+.header1 #search #search-button {
+  font-size: 11px;
+  width: 47px;
+  height: 19px;
+  border: 1px solid #b5b5b5;
+}
+
+.header1 #search #search-button:hover {
+  background: #0b7dda;
+}
+
+.header2 header {
+  position: relative;
+  color: white;
+}
+
+.header2 #header-background {
+  position: relative;
+  width: 100%;
+  height: 196px;
+  object-fit: fill;
+}
+
+.header2 .header-title {
+  position: absolute;
+  top: 23px;
+  left: 26px;
+  font-size: 35px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+
+.header2 .header-subtitle {
+  position: absolute;
+  bottom: 50px;
+  right: 38px;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.header2 .main-nav {
+  position: relative;
+  top: -4px;
+  width: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgb(150, 202, 253) 0%,
+    rgb(124, 184, 236) 24%,
+    rgb(43, 130, 182) 76%,
+    rgb(3, 108, 160) 100%
+  );
+  text-align: center;
+  line-height: 25px;
+}
+
+.header2 .main-nav ul {
+  display: inline-block;
+}
+
+.header2 .main-nav ul li {
+  display: inline;
+}
+
+.header2 .main-nav ul li a {
+  text-decoration: none;
+  font-size: 11px;
+  color: #e3e3e9;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.header2 .main-nav ul li a:hover {
+  color: #f00;
+}
+
+.header2 .main-nav ul li a:focus {
+  color: #f00;
+}
+
+.header2 .main-nav ul li + li::before {
+  content: " | ";
+  padding: 0 5px;
+  color: black;
+  text-shadow: white 1px 0px;
+}
+
+.main-content {
+  display: flex;
+}
+
+.main-content .side-bar {
+  position: relative;
+  top: -4px;
+  display: block;
+}
+
+.main-content .side-bar .left-nav ul {
+  list-style-type: none;
+  width: 11.5em;
+}
+
+.main-content .side-bar .left-nav ul li {
+  line-height: 27px;
+  padding-left: 10px;
+  border-style: solid;
+  border-width: thin;
+  border-color: #d0cfcf;
+  background-image: linear-gradient(#ededed, #c5c4c4);
+}
+
+.main-content .side-bar .left-nav ul li a {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.main-content .side-bar .left-nav ul li a:hover {
+  color: #f00;
+}
+
+.main-content .side-bar .left-nav ul li a:focus {
+  color: #f00;
+}
+
+.main-content .side-bar .left-nav ul li + li::before {
+  content: "\25C6 \0020";
+  font-size: 10px;
+}
+
+.main-content .side-bar .left-nav ul li:first-child {
+  list-style: none;
+}
+
+.main-content .side-bar .nasa-text {
+  display: flex;
+  padding-top: 40px;
+}
+
+.main-content .side-bar .nasa-text p {
+  float: left;
+  color: #888;
+  font-size: 12px;
+  width: 15.2em;
+  text-align: left;
+  padding-top: 10px;
+  margin-top: -6px;
+  border-top: 1px solid #cccccc;
+}
+
+.main-content .side-bar .nasa-text #nasa-logo {
+  float: right;
+}
+
+.main-content .body-area {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content .body-area .main-path nav {
+  display: flex;
+  padding-left: 14px;
+  line-height: 10px;
+  flex-wrap: wrap;
+}
+
+.main-content .body-area .main-path nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.main-content .body-area .main-path nav ul li {
+  font-size: 10px;
+}
+
+.main-content .body-area .main-path nav ul li:last-of-type:before {
+  content: "\00BB \0020";
+}
+
+.main-content .body-area .main-path nav ul li a {
+  display: inline-block;
+  text-decoration: none;
+  padding-right: 5px;
+}
+
+.main-content .body-area .main-path nav ul li a:first-child {
+  color: #40abc6;
+}
+
+.main-content .body-area .paragraph {
+  width: 35.8em;
+}
+
+.main-content .body-area .paragraph h2 {
+  padding-top: 18px;
+  padding-left: 20px;
+  font-size: 18px;
+}
+
+.main-content .body-area .line {
+  margin-left: 20px;
+  border-top: 1px solid #cccccc;
+  width: 36em;
+  margin-top: -7px;
+  margin-bottom: -5px;
+}
+
+.main-content .body-area .paragraph h3 {
+  padding-left: 20px;
+  font-size: 13px;
+}
+
+.main-content .body-area .paragraph p {
+  padding-top: 13px;
+  padding-left: 20px;
+  font-size: 12px;
+  line-height: 22px;
+}
+
+.main-content .body-area .paragraph p a {
+  font-weight: bold;
+  color: #006699;
+  text-decoration: none;
+}
+
+.main-content .body-area .paragraph p a:hover {
+  color: #f00;
+}
+
+.main-content .body-area .paragraph p a:focus {
+  color: #f00;
+}
+
+.main-content .body-area .paragraph #p2 {
+  font-size: 12px;
+  margin-top: -2px;
+  width: 60em;
+  text-align: left;
+}
+
+.main-content .body-area .paragraph .rover-description {
+  float: right;
+  width: 16.2em;
+  height: 16.2em;
+  border: 1px solid #cccccc;
+  padding-left: 6px;
+  padding-top: 6px;
+  margin-top: 12px;
+  margin-right: -17px;
+}
+
+.main-content .body-area .paragraph .rover-description p {
+  margin-top: -13px;
+  margin-left: -20px;
+  font-size: 11px;
+  line-height: 11px;
+}
+
+.main-content .body-area .paragraph .links nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding-top: 10px;
+  padding-left: 45px;
+}
+
+.main-content .body-area .paragraph .links nav ul li {
+  line-height: 32px;
+  font-weight: bold;
+}
+
+.main-content .body-area .paragraph .links nav ul li a {
+  text-decoration: none;
+  padding-right: 5px;
+  font-size: 12px;
+  color: #006699;
+}
+
+.main-content .body-area .paragraph .links nav ul li a:hover {
+  color: #f00;
+}
+
+.main-content .body-area .paragraph .links nav ul li a:focus {
+  color: #f00;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .bottom-nav {
+  padding-top: 30px;
+}
+
+.footer .bottom-nav ul li {
+  display: inline-block;
+  font-size: 11px;
+}
+
+.footer .bottom-nav ul li a {
+  text-decoration: none;
+  color: #4790c8;
+  transition: all 0.5s ease;
+}
+
+.footer .bottom-nav ul a:hover {
+  color: #f00;
+}
+
+.footer .bottom-nav ul a:focus {
+  color: #f00;
+}
+
+.footer .bottom-nav ul li + li::before {
+  content: " | ";
+  padding: 0 1px;
+}
+
+.footer p {
+  font-size: 11px;
+}
+
+.footer p a {
+  text-decoration: none;
+  color: #4790c8;
+}
+
+.footer p a:hover {
+  color: #f00;
+}
+
+.footer p a:focus {
+  color: #f00;
+}
+
+.footer #address {
+  color: #a4aab0;
+}
+
+.footer #address a::before {
+  content: " | ";
+  padding: 0 1px;
+  color: black;
+}
